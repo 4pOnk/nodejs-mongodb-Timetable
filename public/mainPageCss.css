@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    position: absolute;
+    background-color: blueviolet;
+    width: 100%;
+}
+#classListOp{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%,-50%);
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#classListOpDef *{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#classListOpDef{
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 7px ;
+    width: 240px;
+    height: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#classListOp ul li{
+    height: 40px;
+    padding-left: 20px;
+    list-style-type: none;
+    padding-top: 10px;
+    cursor: pointer;
+    border-top: 1px solid #cad5dc;
+    z-index: 9;
+}
+#classListOp ul li:hover{
+    background-color: lightblue;
+}
+#classListOp ul{
+    transform: translateY(-100%);
+    transition: .3s;
+    height: 500px;
+    overflow: auto;
+    background-color: #e5eef4;
+    border-radius: 0 0 7px 7px;
+}
+#hideClasses{
+    overflow: hidden;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+}
+#now{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-55%);
+    font-family: Verdana;
+    font-size: 100px;
+    color: #05003F;
+    height: 180px;
+    width: 650px;
+    border: 4px double black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#now span{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#currentTime{
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: translate(-18%,-40%);
+    font-family: Verdana
+}

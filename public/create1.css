@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bookman, Old Style;
+}
+
+body{
+    background-color: #F4F5FF;
+}
+
+header{
+    position: absolute;
+    background-color: #005598;
+    width: 100%;
+    height: 100px;
+}
+
+header img{
+    position: absolute;
+    height: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .brand{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+.brand h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 90px;
+}
+
+header h2{
+    color: white;
+    font-size: 65px;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%,-50%);
+}
+
+
+
+.timetable h2{
+    font-size: 45px;
+    text-align: center;
+    border: #5680C1 5px solid;
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 0;
+    padding: 5px;
+    color: #05003F;
+    background-color: #C9CFFF;
+}
+table {
+    border-collapse: collapse;
+    width: 400px;
+    font-family: sans-serif;
+    }
+
+table td{
+    text-align: center;
+    border: 5px solid #5680C1;
+    padding: 10px;
+    font-size: 28px;
+    color: #05003F;
+}
+.clock{
+    width: 50px;
+    font-size: 18px;
+}
+
+.thead{
+    background-color: #5680C1;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+
+.lesson{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40%;
+
+    color: #05003F;
+    text-align: center;
+}
+.name{
+    border: #5680C1 6px solid;
+    border-radius: 18px 18px 0px 0px;
+    border-bottom: none;
+
+    background-color: #C9CFFF;
+    font-size: 30px;
+    padding: 10px;
+}
+.timer{
+    border: #5680C1 6px solid;
+    border-radius: 0px 0px 18px 18px;
+
+    font-size: 80px;
+    text-align: center;
+    padding: 110px;
+    font-family: Verdana;
+}
+.addClock input{
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #2c4263;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.addClock span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.addClockL{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.addClockR{
+    position: absolute;
+    right:  5px;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.addClock{
+    position: relative;
+    width: 110px;
+}
+.addLesson input{
+    width: 235px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #2c4263;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.addNew{
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #2c4263;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,50%);
+    cursor: pointer;
+    margin-bottom: 450px;
+}
+
+.toAdd{
+    position: absolute;
+}
+
+.timetable ul{
+    position: absolute;
+    list-style-type: none;
+    background-color: rgb(233 234 245);
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,40%);
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    opacity: 0;
+    display: none;
+    transition: .5s;
+}
+
+.timetable ul li{
+    padding: 10px;
+    border-top: 1px solid lightslategray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.timetable ul li:hover{
+    background-color: lightsteelblue;
+}
+
+.timetable{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-35%,-35%);
+}
+
+.weekDays{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-35%,-25%);
+    display: flex;
+    color: lightyellow;
+    font-size: 20px;
+}
+
+.weekDays div{
+    position: relative;
+    background-color: #5284ab;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.weekDays div *{
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.submitChanges{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%,-50%);
+    display: block;
+    width: 300px;
+    height: 70px;
+    font-size: 27px;
+    font-weight: 500;
+    font-family: sans-serif;
+    border: 2px solid #5680c1;
+    outline: none;
+    background-color: #c0c6f1;
+    border-radius: 15px;
+}
+
+.tr{
+    display: block;
+    margin-top: -5px;
+}
+.removeNew{
+    left: 100%;
+    transform: translate(-100%,50%);
+}

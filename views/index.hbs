@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/static/mainPageCss.css">
+<header>
+    <a href="/"><div class="brand">
+        <img src="/static/images/brand.jpg" alt="brand">
+        <h2>ITimer</h2>
+    </div></a>
+    <div id="classListOp">
+        
+        <div id="classListOpDef"><span>Выбрать класс</span></div>
+        <div id="hideClasses">
+        <ul>
+            <li>Выбрать класс</li>
+            {{#each classes}}
+            <div class="classSelect"><a href="class/{{this}}">
+                    <li>{{this}}</li>
+                </a></div>
+            {{/each}}
+        </ul>
+        </div>
+    </div>
+    </div>
+</header>
+<div id="now"><span></span></div>
+
+<script src="/static/selectClass.js"></script>

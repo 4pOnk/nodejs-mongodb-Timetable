@@ -1,0 +1,49 @@
+{{>header}}
+<link rel="stylesheet" href="/static/create1.css">
+<body>
+    <form action="/create/{{class}}/{{day}}" method="POST">
+    <div class="timetable">
+        <div class="thead"><h2>Расписание:</h2></div>
+        <div class="toAdd">
+        <table class="createTable">
+            {{#each dayObj}}
+            <tr class="tr">
+                <td class="addClock">
+                    <input type="text" class="addClockL" name="Ltime">
+                    <span>:</span>
+                    <input type="text" class="addClockR" name="Ltime">
+                </td>
+                <td class="addLesson">
+                    <input type="text" placeholder="Урок" name='dayObj'>
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+        
+        <input class="addNew" type="button" value="+">
+        <input class="addNew removeNew" type="button" value="-">
+        
+        <ul>
+            <li>Урок</li>
+            <li>Перемена</li>
+            <li>Второй завтрак</li>
+            <li>Обед</li>
+            <li>Прогулка</li>
+        </ul>
+        </div>
+    </div>   
+    
+    <div class="weekDays">
+        <a href="/create/10-{{class}}/1"><div class="mon wd"><span>Пон</span></div></a>
+        <a href="/create/10-{{class}}/2"><div class="tue wd"><span>Вт</span></div></a>
+        <a href="/create/10-{{class}}/3"><div class="wed wd"><span>Ср</span></div></a>
+        <a href="/create/10-{{class}}/4"><div class="thr wd"><span>Чет</span></div></a>
+        <a href="/create/10-{{class}}/5"><div class="fri wd"><span>Пят</span></div></a>
+        <a href="/create/10-{{class}}/6"><div class="sat wd"><span>Суб</span></div></a>
+    </div>
+
+    <input type="submit" value="Сохранить" class="submitChanges">
+
+</form>
+    <script src="/static/createTT.js"></script>
+</body>

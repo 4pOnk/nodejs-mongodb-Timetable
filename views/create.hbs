@@ -1,0 +1,18 @@
+{{>header}}
+
+<link rel="stylesheet" href="/static/createPage.css">
+<form action="/login" method="POST">
+    <label for="" class="login">
+        {{#if isUserUnfined}}
+        <p class='wrp'>Пользователь не найден</p>
+        {{/if}}
+        <input type="text" placeholder="Login" name="login" minlength="3" maxlength="10">
+    </label><br>
+    <label for="" class="password">
+        {{#if isPassWrg}}
+        <p class='wrp'>Неправильно введен пароль</p>
+        {{/if}}
+        <input type="password" placeholder="Password" name="password" minlength="3" maxlength="10">
+    </label><br>
+    <input type="submit" value="Отправить" class="submit">
+</form>

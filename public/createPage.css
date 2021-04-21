@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+}
+
+form::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: lightblue;
+    top: -40px;
+    left: -50px;
+    right: -50px;
+    bottom: -80px;
+    z-index: -1;
+    border-radius: 20px;
+}
+.wrp{
+    color: brown;
+    font-size: 19px;
+}
+form input{
+    width: 400px;
+    height: 45px;
+    font-size: 25px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.submit{
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

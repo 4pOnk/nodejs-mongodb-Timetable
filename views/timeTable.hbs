@@ -1,0 +1,36 @@
+<header>
+    <a href="/"><div class="brand">
+        <img src="/static/images/brand.jpg" alt="brand">
+        <h2>ITimer</h2>
+    </div></a>
+    <div class="form">
+        <h2>Класс {{yourClass}}</h2>
+    </div>
+</header>
+<body>
+<div class="timetable">
+        <table>
+            <thead>
+            <h2>Расписание:</h2>
+            </thead>
+            {{#each yourLessons}}
+            <tr>
+                <td>{{this}}</td>
+            </tr>
+            {{/each}}
+        </table>
+</div>
+
+<div class="lesson">
+    <div class="name">
+        <h2>Сейчас:  <span id="nowLes"></span></h2>
+    </div>
+    <div class="timer"></div>
+</div>
+
+<button style="display: none; position:absolute" id="lessonsInp">{{LessonsFull}}</button>
+<input type="text" style="display: none; position:absolute" id="timeTableInp" value={{timeTable}}>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

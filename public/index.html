@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ITimer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div class="brand">
+        <img src="images/brand.jpg" alt="brand">
+        <h2>ITimer</h2>
+    </div>
+    <div class="form">
+        <h2>Класс 10-3</h2>
+    </div>
+</header>
+
+<body>
+<div class="timetable">
+        <table>
+            <thead>
+            <h2>Расписание</h2>
+            </thead>
+            <tr>
+                <td class="clock">8:05-8:45</td>
+                <td>Физ-ра</td>
+            </tr>
+            <tr>
+                <td class="clock">8:55-9:35</td>
+                <td>Проект. деят-ть</td>
+            </tr>
+            <tr>
+                <td class="clock">9:45-10:25</td>
+                <td>Обществознание</td>
+            </tr>
+            <tr>
+                <td class="clock">10:40-11:20</td>
+                <td>Математика</td>
+            </tr>
+            <tr>
+                <td class="clock">11:30-12:10</td>
+                <td>Англ.яз</td>
+            </tr>
+            <tr>
+                <td class="clock">13:05-13:45</td>
+                <td>Информатика</td>
+            </tr>
+            <tr>
+                <td class="clock">14:35-15:15</td>
+                <td>WEB/робот.</td>
+            </tr>
+            <tr>
+                <td class="clock">15:20-16:00</td>
+                <td>WEB/робот.</td>
+            </tr>
+        </table>
+</div>
+
+<div class="lesson">
+    <div class="name">
+        <h2>Текущий урок:  <span id="nowLes"></span></h2>
+    </div>
+    <div class="timer"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
